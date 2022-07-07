@@ -1,0 +1,217 @@
+body{
+	text-align: left;
+	font-size: 19px;
+	font-family: cursive, arial;
+	color: #fff;
+	letter-spacing: 1px;
+	line-height: 27px;
+	margin:0;
+	user-select: none;
+}
+
+#container{
+    text-align:center;
+	width: 100vw;
+	height: 100vh;
+	background: green;
+}
+
+/*game area*/
+#gameArea{
+	position: relative;
+	top: calc(50% - 348px);
+	width: 728px;
+	height: 600px;
+	margin: auto;
+	border: 10px solid;
+	border-radius: 25px;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+	text-align: left;
+	padding: 5px;
+	background: darkred;
+}
+
+#gameAreaSpan{
+	position: absolute;
+	bottom: 5px;
+	right: 5px;
+}
+/*game area end*/
+
+/*table*/
+#tableau{
+	position: absolute;
+	left: 164px;
+	top: -1px;
+}
+
+.cardBlock, .stockPile{
+	display: inline-block;
+	position: relative;
+	width: 92px;
+	height: 127px;
+	border: 1px solid;
+	margin: 10px 5px;
+}
+
+.stockPile{
+	left: 21px;
+	cursor: pointer;
+}
+
+#foundation{
+	right: 23px;
+	position: absolute;
+}
+/*table end*/
+
+/*card*/
+.card{
+	top: -10px;
+	left: -11px;
+	cursor: pointer;
+	border:1px solid #000;
+	transition:1s;
+}
+
+.topClass2{
+	top:32px;
+}
+
+.topClass3{
+	top:72px;
+}
+
+.topClass4{
+	top:112px;
+}
+
+.topClass5{
+	top:152px;
+}
+
+.topClass6{
+	top:192px;
+}
+
+.topClass7{
+	top:232px;
+}
+
+.topClass8{
+	top:272px;
+}
+
+.topClass9{
+	top:312px;
+}
+
+.topClass10{
+	top:352px;
+}
+
+.topClass11{
+	top:392px;
+}
+
+.topClass12{
+	top:432px;
+}
+
+.topClass13{
+	top:472px;
+}
+
+.ncbSpan{
+	position: absolute;
+	font-size: 124px;
+	top: 44px;
+	left: 8px;
+}
+/*card end*/
+
+/*model*/
+#shadowBack{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+	background: rgba(0, 0, 0, 50%);
+	border-top-right-radius: 15px;
+	border-top-left-radius: 15px;
+	opacity: 0;
+	transition:.5s;
+}
+
+#model{
+	position: absolute;
+	width: 325px;
+	background: #000;
+	padding: 18px;
+	margin: auto;
+	left: calc(50% - 180px);
+	top: calc(50% - 100px);
+	border: 7px solid red;
+	border-radius: 10px;
+	text-align: center;
+}
+
+#modelSpan{
+	display: block;
+	font-size: 23px;
+	letter-spacing: 2px;
+}
+
+#modelBtn{
+	cursor: pointer;
+	background: green;
+	padding: 5px;
+	margin-top: 19px;
+	display: block;
+	transition:.5s;
+}
+
+#modelBtn:hover{
+	background: darkgreen;
+}
+
+#modelScoreBlock{
+	margin-top:10px;
+}
+/*model end*/
+
+/*score*/
+.scoreSpan{
+	display: block;
+}
+
+#scoreArea{
+	border: 10px solid;
+    width: 738px;
+    position: absolute;
+    margin: auto;
+    top: calc(50% + 241px);
+    left: calc(50% - 379px);
+    border-top: 0;
+    height: 96px;
+}
+
+.scoreBlock{
+	display: inline-block;
+	position: relative;
+	top: 40px;
+	width: 50%;
+	height: 56px;
+	background-color: #000;
+}
+
+.scoreValue{
+	display: block;
+	position: relative;
+	top: 11px;
+	font-size: 26px;
+}
+/*score end*/

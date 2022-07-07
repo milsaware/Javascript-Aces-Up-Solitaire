@@ -1,0 +1,226 @@
+/* suits start */
+.clubs, .diamond, .heart, .spade {
+  position: relative;
+  margin-top: 10px;
+}
+
+.clubs::before, .clubs::after {
+	content: "";
+	position: absolute;
+	top: 9px;
+	width: 10px;
+	height: 10px;
+	border-radius: 100%;
+	background: #000;
+}
+
+.clubs::before {
+	left: 10px;
+	box-shadow: -5px -7px #000;
+}
+
+.clubs::after {
+  left: 0;
+}
+
+.diamond::after {
+	content: "";
+	position: absolute;
+	left: -2px;
+	top: 5px;
+	width: 13px;
+	height: 13px;
+	background: red;
+	transform: rotate(45deg);
+	transform-origin: 100% 100%;
+}
+
+.heart::before, .heart::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 10px;
+  height: 16px;
+  border-radius: 50px 50px 0 0;
+  background: red;
+}
+
+.heart::before {
+  left: 10px;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+}
+
+.heart::after {
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
+}
+
+.spade::before, .spade::after {
+  content: "";
+  position: absolute;
+  top: -7px;
+  width: 10px;
+  height: 16px;
+  border-radius: 50px 50px 0 0;
+  background: #000;
+}
+
+.spade::before {
+  left: 17px;
+  transform: rotate(-135deg);
+  transform-origin: 0 100%;
+}
+
+.spade::after {
+  left: -7px;
+  transform: rotate(135deg);
+  transform-origin: 100% 100%;
+}
+
+.spade-notch {
+  border:1px solid #000;
+}
+/* suits end */
+
+/* card start */
+.card{
+	position: absolute;
+    border: 1px solid;
+    width: 90px;
+    height: 125px;
+    /* margin: auto; */
+    /* margin-left: 2.5px; */
+    /* margin-right: 2.5px; */
+    margin-top: 5px;
+    background-color: #fff;
+    display: inline-block;
+    color: #000;
+    left: 0;
+    margin-top: 10px;
+    margin-left: 11px;
+}
+
+.red{
+	color:red;
+}
+
+.number-top{
+	position: relative;
+	top: -4px;
+	left: 6px;
+}
+
+.suit-top{
+	position: relative;
+	top: -17px;
+	left: 1px;
+}
+
+.number-bottom{
+	position: relative;
+	top: 62px;
+	text-align: left;
+	right: 5px;
+	transform: rotate(-180deg);
+}
+
+.suit-bottom{
+	position: relative;
+	top: 28px;
+	right: 1px;
+	transform: rotate(-180deg);
+}
+
+.suit-centre{
+	position: absolute;
+}
+
+.two-one, .three-one{
+	left: 36px;
+	top: -21px;
+}
+
+.two-two, .three-three{
+	left: 36px;
+	top: 33px;
+}
+
+.three-two{
+	left: 36px;
+	top: 5px;
+}
+
+.four-one, .five-one, .six-one, .seven-one, .eight-one, .nine-one, .ten-one{
+	left: 21px;
+	top:-15px;
+}
+
+.four-two, .five-two, .six-two, .seven-two, .eight-two, .nine-two, .ten-two{
+	left: 50px;
+	top: -15px;
+}
+
+.four-three, .five-three, .six-five, .seven-five, .eight-five, .nine-five, .ten-five{
+	left: 21px;
+	top: 29px;
+}
+
+.four-four, .five-four, .six-six, .seven-six, .eight-six, .nine-six, .ten-six{
+	left: 50px;
+	top: 29px;
+}
+
+.five-five{
+	left: 36px;
+	top: 8px;
+}
+
+.six-three, .seven-three, .eight-three, .nine-three, .ten-three{
+	left: 21px;
+	top: 8px;
+}
+
+.six-four, .seven-four, .eight-four, .nine-four, .ten-four{
+	left: 50px;
+	top: 8px;
+}
+
+.seven-seven, .eight-seven, .nine-seven, .ten-seven{
+	left: 36px;
+	top: 19px;
+}
+
+.eight-eight, .nine-eight, .ten-eight{
+	left: 36px;
+	top: -5px;
+}
+
+.nine-nine, .ten-ten{
+	left: 36px;
+	top: 42px;
+}
+
+.ten-nine{
+	left: 36px;
+	top: -28px;
+}
+
+.face{
+	font-size: 60px;
+	margin-left: 23px;
+}
+
+.cardHidden .number-top, .cardHidden .number-bottom, .cardHidden .suit-top, .cardHidden .suit-bottom, .cardHidden .suit-centre{
+	display:none;
+}
+
+.cardHidden{
+	cursor:default;
+	background-image: linear-gradient(to bottom, transparent 50%, #28487d 50%),
+		linear-gradient(to right, #617ca2 50%, #28487d 50%);
+	background-size: 10px 10px, 10px 10px;
+	border:1px solid #fff !important;
+}
+/* card end */
